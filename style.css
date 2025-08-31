@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: url('clear.jpeg') no-repeat center center/cover;
+  color: white;
+}
+
+.app-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+}
+
+button {
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-info, .forecast, .map-container, .history {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#forecastContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}

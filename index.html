@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌦️ Smart Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>🌍 Smart Weather App</h1>
+    <div class="search-container">
+      <input type="text" id="cityInput" placeholder="Enter city, village, district, state, or country">
+      <button onclick="getWeather()">🔍 Search</button>
+      <button onclick="getLocationWeather()">📍 Live Location</button>
+      <button onclick="toggleTempUnit()">🌡️ °C/°F</button>
+    </div>
+
+    <div class="weather-info">
+      <h2 id="cityName">--</h2>
+      <p id="dateTime">--</p>
+      <p id="temperature">--</p>
+      <p id="humidity">--</p>
+      <p id="description">--</p>
+      <p id="aqi">--</p>
+      <p id="weatherTip">--</p>
+    </div>
+
+    <div class="forecast">
+      <h3>📅 7-Day Forecast</h3>
+      <div id="forecastContainer"></div>
+    </div>
+
+    <div class="map-container">
+      <h3>🗺️ Location Map</h3>
+      <iframe id="mapFrame" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <div class="history">
+      <h3>⭐ Favorites / History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
